@@ -59,9 +59,10 @@ input {
 
 }
 
-.logo img {
-    width: 120px;
-    height: 90px;
+.header-button-logo img {
+    width: 90px;
+    height: auto;
+    margin-left:16px ;
 
 }
 
@@ -81,7 +82,7 @@ input {
     border-radius: 40px;
     height: 30px;
     width: 30px;
-    border: 1px solid #303030;
+    border: transparent
 
 }
 
@@ -90,10 +91,52 @@ input {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-
+    margin: 0;
 
 }
 
 .menu-button {
+    display: flex;
+    background-color: #181818;
+    color: white;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    border: transparent;
     
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+
+
+}
+.header-buttons {
+    display: flex;
+    background-color: #181818;
+    color: white;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    border: transparent;
+    
+}
+
+#profile-button {
+    background-color: #181818;
+    border: transparent
+
+}
+
+#profile-button img{
+    border-radius: 40px;
+    height: 30px;
+    width: 30px;
+
 }
