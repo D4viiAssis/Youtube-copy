@@ -2,141 +2,285 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", Arial, sans-serif;
 }
 
 body {
     background-color: #0f0f0f;
     color: white;
-    font-family: Roboto, Arial, sans-serif;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 16px;
-    background-color: #181818;
-    height: 40px;
-    margin: 0;
+    padding: 0 16px;
+    height: 56px;
+    background-color: #0f0f0f;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-left, .header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-container img {
+    height: 70px;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+}
+
+.country {
+    font-size: 10px;
+    color: #aaa;
+    position: absolute;
+    top: 15px;   
+    right: -5px; 
+    font-weight: 400;
+}
+
+.menu-icon {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .header-center {
     display: flex;
     align-items: center;
-    gap: 15px; 
-    justify-content: center;
+    gap: 15px;
+    flex: 0 1 720px;
 }
 
-.search-bar {
+.search-box {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 650px;
-
-}
-
-.search-form {
     width: 100%;
-    display: flex;
-    background-color: #2A2A2A;
+    background-color: #121212;
     border: 1px solid #303030;
     border-radius: 40px;
     overflow: hidden;
-    align-items: center;
-    justify-content: end;
-    height: 30px;
-
+    height: 40px;
 }
 
-input {
-    width: 100%;
-    background-color: #121212;
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 0 15px;
+}
+
+.input-wrapper input {
+    flex: 1;
+    background: transparent;
     border: none;
     color: white;
-    padding: 10px 20px;
     outline: none;
-    margin-right: 10px;
-
+    font-size: 16px;
 }
 
-.header-button-logo img {
-    width: 90px;
-    height: auto;
-    margin-left:16px ;
-
+.input-wrapper i {
+    color: #aaa;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
-.search-button {
-    background-color: #2A2A2A;
-    border: 1px solid #2A2A2A;
-    color: rgb(205, 190, 190);
-    margin-right: 10px;
-    height: 50px;
-    width: 40px;
-
-}
-
-.mic-button {
-    background-color: #303030;
+.search-btn {
+    width: 64px;
+    background-color: #222222;
+    border: none;
+    border-left: 1px solid #303030;
     color: white;
-    border-radius: 40px;
-    height: 30px;
-    width: 30px;
-    border: transparent
-
+    font-size: 18px;
+    cursor: pointer;
 }
 
-.header-left {
+.mic-btn {
+    background-color: #181818;
+    border: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.create-btn {
+    background-color: #272727;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: row;
+    gap: 8px;
+    font-weight: 500;
+}
+
+.notification-icon {
+    position: relative;
+    font-size: 20px;
+}
+
+.badge {
+    background-color: #cc0000;
+    font-size: 10px;
+    padding: 1px 4px;
+    border-radius: 10px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    border: 2px solid #0f0f0f;
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.channel-layout {
+    display: grid;
+    grid-template-columns: 1fr; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner img {
+    width: 100%;
+    border-radius: 15px;
     margin: 0;
-
 }
 
-.menu-button {
+.channel-info {
     display: flex;
-    background-color: #181818;
-    color: white;
-    height: 40px;
-    width: 40px;
+    padding: 20px 0;
+    gap: 20px;
     align-items: center;
-    justify-content: center;
-    border: transparent;
-    
 }
 
-.header-right {
+.profile-pic img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.channel-details h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.channel-details p {
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.channel-details i {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.channel-handle {
+    font-weight: bold;
+    color: white;
+
+}
+
+.buttons-row {
     display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.subscribe-btn, .member-btn {
+    padding: 0px 20px;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    height: 45px;
+}
+
+.subscribe-btn { 
+    background-color: #272727; 
+    color: white; 
+}
+
+.member-btn { 
+    background-color: #272727; 
+    border: 1px solid #3e3e3e; 
+    color: #ffffff; 
+    display: flex; 
     flex-direction: row;
+    font-size: 14px; 
     align-items: center;
-    justify-content: space-between;
-
-
-
+    justify-content: center; 
+    gap: 10px;
+    padding: 0px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    height: 45px;
 }
-.header-buttons {
+
+.star-circle {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
     display: flex;
-    background-color: #181818;
-    color: white;
-    height: 40px;
-    width: 40px;
-    align-items: center;
-    justify-content: center;
+}
+
+.star-circle i  {
+    color:#272727;
     border: transparent;
-    
+    font-size: 0.8em;
+    margin: auto;
 }
 
-#profile-button {
-    background-color: #181818;
-    border: transparent
-
+.channel-nav {
+    display: flex;
+    gap: 30px;
+    border-bottom: 1px solid #3e3e3e;
+    padding-bottom: 10px;
+    margin-top: 10px;
 }
 
-#profile-button img{
-    border-radius: 40px;
-    height: 30px;
-    width: 30px;
+.channel-nav a {
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 500;
+}
 
+.channel-nav a.active {
+    color: white;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+
+.expand-description {
+    font-weight: bold;
+    color: white;
+}
+
+.expand-links {
+    font-weight: bold;
+    color: white;
+}
+
+.instagram-link {
+    color: #3ea6ff;
+    text-decoration: none;
 }
