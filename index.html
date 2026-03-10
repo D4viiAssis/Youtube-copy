@@ -11,10 +11,10 @@
 <body>
     <header>
         <div class="header-left">
-            <button class="menu-icon"><i class="fa-solid fa-bars"></i></button>
+            <button class="menu-icon"id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
             <div class="logo-container">
                 <div class="logo-link">
-                    <img src="images/YoutubeDarkLogo.png" alt="YouTube">
+                    <img src="images/Header/YoutubeDarkLogo.png" alt="YouTube">
                     <span class="country">BR</span>
                 </div>
             </div>
@@ -38,18 +38,72 @@
                 <i class="fa-solid fa-bell"></i>
                 <span class="badge">9+</span>
             </div>
-            <img src="images/Profile.png" class="user-avatar" alt="Avatar">
+            <img src="images/Header/Profile.png" class="user-avatar" alt="Avatar">
         </div>
     </header>
 
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-section">
+            <a href="#" class="sidebar-item active"><i class="bi bi-house-door-fill"></i> Início</a>
+            <a href="#" class="sidebar-item"><i class="bi bi-collection-play"></i> Shorts</a>
+        </div>
+
+        <hr class="separator">
+
+        <div class="sidebar-section">
+            <h3 class="section-title-sidebar">Inscrições <i class="bi bi-chevron-right"></i></h3>
+            <a href="#" class="sidebar-item profile-item">
+                <img src="images/Channel Details/ChannelPfp.png" alt="Viniccius13">
+                <span>viniccius13</span>
+                <span class="dot"></span>
+            </a>
+            <a href="#" class="sidebar-item profile-item">
+                <img src="images/Sidebar/ChannelPfp2.png" alt="Futparódias">
+                <span>Futparódias</span>
+                <span class="dot"></span>
+            </a>
+            <a href="#" class="sidebar-item profile-item">
+                <img src="images/Sidebar/ChannelPfp3.png" alt="Channel3">
+                <span>Channel3</span>
+                <span class="dot"></span>
+            </a>
+            <a href="#" class="sidebar-item profile-item">
+                <img src="images/Sidebar/ChannelPfp4.png" alt="Channel4">
+                <span>Channel4</span>
+                <span class="dot"></span>
+            </a>
+            <a href="#" class="sidebar-item profile-item">
+                <img src="images/Sidebar/ChannelPfp5.png" alt="Channel5">
+                <span>Channel5</span>
+                <span class="dot"></span>
+            </a>
+            <a href="#" class="sidebar-item profile-item">
+                <img src="images/Sidebar/ChannelPfp6.png" alt="Channel6">
+                <span>Channel6</span>
+                <span class="dot"></span>
+            </a>
+        </div>
+
+        <hr class="separator">
+
+        <div class="sidebar-section">
+            <h3 class="section-title-sidebar">Você <i class="bi bi-chevron-right"></i></h3>
+            <a href="#" class="sidebar-item"><i class="bi bi-clock-history"></i> Histórico</a>
+            <a href="#" class="sidebar-item"><i class="bi bi-play-btn"></i> Playlists</a>
+            <a href="#" class="sidebar-item"><i class="bi bi-clock"></i> Assistir mais tarde</a>
+            <a href="#" class="sidebar-item"><i class="bi bi-hand-thumbs-up"></i> Vídeos com "Gostei"</a>
+            <a href="#" class="sidebar-item"><i class="bi bi-download"></i> Downloads</a>
+        </div>
+    </aside>
+
     <main class="channel-layout">
         <section class="banner">
-            <img src="images/ChannelBanner.png" alt="Banner Viniccius13">
+            <img src="images/Channel Details/ChannelBanner.png" alt="Banner Viniccius13">
         </section>
 
         <section class="channel-info">
             <div class="profile-pic">
-                <img src="images/ChannelPfp.png" alt="Viniccius13">
+                <img src="images/Channel Details/ChannelPfp.png" alt="Viniccius13">
             </div>
             <div class="channel-details">
                 <h1>viniccius13 <i class="bi bi-check-circle-fill"></i></h1>
@@ -60,7 +114,7 @@
                     <span class="expand-links">e mais 1 link</span>
                 </div>
                 <div class="buttons-row">
-                    <button class="subscribe-btn"><i class="bi bi-bell"></i> Inscrito <i class="bi bi-chevron-down"></i></button>
+                    <button class="subscribe-btn" id="sub-btn" ><i class="bi bi-bell"></i> Inscrito <i class="bi bi-chevron-down"></i></button>
                     <button class="member-btn">
                         <div class="star-circle"><i class="bi bi-star-fill"></i></div> Seja membro
                     </button>
@@ -76,8 +130,110 @@
             <i class="bi bi-search"></i>
         </nav>
 
+        <h2 class="section-title">Para você</h2>
         <section class="video-grid">
-            </section>
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="images/Thumbnails/Video1-Thumbnail.png" alt="Thumbnail">
+                    <span class="video-duration">44:27</span>
+                </div>
+                <div class="video-meta">
+                    <h3 class="video-title">Farm de Flor de Cacto - Minecraft Em busca da casa automática #382</h3>
+                    <p class="video-stats">2,2 mi de visualizações • há 10 meses</p>
+                    <i class="bi bi-three-dots-vertical"></i>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="images/Thumbnails/Video2-Thumbnail.png" alt="Thumbnail">
+                    <span class="video-duration">41:54</span>
+                </div>
+                <div class="video-meta">
+                    <h3 class="video-title">A Fantástica FARM DE PISTÃO - Minecraft Em busca da casa automática #370</h3>
+                    <p class="video-stats">2,4 mi de visualizações • há 1 ano</p>
+                    <i class="bi bi-three-dots-vertical"></i>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="images/Thumbnails/Video3-Thumbnail.png" alt="Thumbnail">
+                    <span class="video-duration">45:51</span>
+                </div>
+                <div class="video-meta">
+                    <h3 class="video-title">ULTIMATE BLAZE FARM - Minecraft Em busca da casa automática #381</h3>
+                    <p class="video-stats">2,1 mi de visualizações • há 11 meses</p>
+                    <i class="bi bi-three-dots-vertical"></i>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <h2 class="section-title">Vídeos</h2>
+        <section class="video-grid-small">
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="images/Thumbnails/Video4-Thumbnail.png" alt="Thumbnail">
+                    <span class="video-duration">28:43</span>
+                </div>
+                <div class="video-meta">
+                    <h3 class="video-title">TELA ANIMADA com LEDS no Minecraft</h3>
+                    <p class="video-stats">939 mil visualizações • há 1 mês</p>
+                    <i class="bi bi-three-dots-vertical"></i>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="images/Thumbnails/Video5-Thumbnail.png" alt="Thumbnail">
+                    <span class="video-duration">42:49</span>
+                </div>
+                <div class="video-meta">
+                    <h3 class="video-title">EM BUSCA DO HYTALE AUTOMÁTICO!</h3>
+                    <p class="video-stats">2 mi de visualizações • há 1 mês</p>
+                    <i class="bi bi-three-dots-vertical"></i>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="images/Thumbnails/Video6-Thumbnail.png" alt="Thumbnail">
+                    <span class="video-duration">37:40</span>
+                </div>
+                <div class="video-meta">
+                    <h3 class="video-title">ULTIMATE KART RACE - Minecraft...</h3>
+                    <p class="video-stats">1,1 mi de visualizações • há 2 meses</p>
+                    <i class="bi bi-three-dots-vertical"></i>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="images/Thumbnails/Video7-Thumbnail.png" alt="Thumbnail">
+                    <span class="video-duration">31:36</span>
+                </div>
+                <div class="video-meta">
+                    <h3 class="video-title">O Segredo da LANÇA - Minecraft...</h3>
+                    <p class="video-stats">1,2 mi de visualizações • há 2 meses</p>
+                    <i class="bi bi-three-dots-vertical"></i>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="images/Thumbnails/Video8-Thumbnail.png" alt="Thumbnail">
+                    <span class="video-duration">39:18</span>
+                </div>
+                <div class="video-meta">
+                    <h3 class="video-title">Times Square de LED no Minecraft...</h3>
+                    <p class="video-stats">1,7 mi de visualizações • há 3 meses</p>
+                    <i class="bi bi-three-dots-vertical"></i>
+                </div>
+            </div>
+        </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
