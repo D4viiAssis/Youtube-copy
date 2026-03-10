@@ -121,12 +121,22 @@ header {
 
 .create-btn {
     background-color: #272727;
+    display: flex;
     border: none;
     color: white;
     padding: 8px 16px;
     border-radius: 20px;
     font-weight: 500;
     cursor: pointer;
+    height: 35px;
+    width: 90px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.create-btn i {
+    background-color: #272727;
+
 }
 
 .notification-icon {
@@ -153,7 +163,7 @@ header {
     cursor: pointer;
 }
 
-/* SIDEBAR (Ajustada para deslizar) */
+/* SIDEBAR */
 .sidebar {
     width: 240px;
     background-color: #0f0f0f;
@@ -230,7 +240,6 @@ body.sidebar-active .channel-layout {
     width: 100%;
     max-height: 200px;
     border-radius: 15px;
-    margin-top: 15px;
     object-fit: cover;
 }
 
@@ -256,6 +265,11 @@ body.sidebar-active .channel-layout {
 .channel-details p {
     color: #aaa;
     font-size: 14px;
+    padding: 8px 0px;
+}
+
+.verified-icon {
+    font-size: 25px;
 }
 
 .channel-handle {
@@ -267,6 +281,7 @@ body.sidebar-active .channel-layout {
     color: #3ea6ff !important;
     text-decoration: none;
     font-size: 14px;
+    margin-top: 5px;
 }
 
 /* BOTÕES DE AÇÃO */
@@ -275,12 +290,12 @@ body.sidebar-active .channel-layout {
     gap: 12px;
     margin-top: 15px;
 }
-
 .subscribe-btn {
     padding: 0 16px;
     border-radius: 20px;
     border: none;
     font-weight: 500;
+    font-weight: bold;
     cursor: pointer;
     height: 36px;
     background-color: #f1f1f1;
@@ -307,6 +322,7 @@ body.sidebar-active .channel-layout {
     padding: 0 16px;
     border-radius: 20px;
     font-weight: 500;
+    font-weight: bold;
     height: 36px;
     cursor: pointer;
 }
@@ -321,7 +337,7 @@ body.sidebar-active .channel-layout {
 
 .star-circle i {
     color: #272727;
-    font-size: 10px;
+    font-size: 13px;
     margin: auto;
 }
 
@@ -354,7 +370,7 @@ body.sidebar-active .channel-layout {
 
 .video-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 16px;
 }
 
@@ -433,3 +449,56 @@ body.sidebar-active .channel-layout {
     border-top: 1px solid #3e3e3e;
     margin: 32px 0 10px 0;
 }
+
+/*MOBILE*/
+@media (max-width: 768px) {
+    header {
+        justify-content: flex-end;
+    }
+
+    .header-left, .header-center {
+        display: none; 
+    }
+    .mobile-nav {
+        display: flex; 
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 48px;
+        background-color: #0f0f0f;
+        border-top: 1px solid #272727;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 2
+    }
+
+    .channel-info {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr; 
+}
+
+    .video-card {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .thumbnail-container {
+        margin-right: 20px;
+
+    }
+
+    .thumbnail-container img {
+        width: 210px;
+
+    }
+
+    .video-grid-small {
+        grid-template-columns: 1fr;
+    }
+}
+ 
+
