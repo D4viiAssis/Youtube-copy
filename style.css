@@ -451,7 +451,7 @@ body.sidebar-active .channel-layout {
 }
 
 /*MOBILE*/
-@media (max-width: 768px) {
+@media (max-width: 618px) {
     header {
         justify-content: flex-end;
     }
@@ -498,6 +498,11 @@ body.sidebar-active .channel-layout {
 
     .video-grid-small {
         grid-template-columns: 1fr;
+    }
+
+    .profile-pic {
+        height: 10px;
+        width: 20px;
     }
 }
  
