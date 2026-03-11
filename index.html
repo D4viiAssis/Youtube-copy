@@ -12,8 +12,10 @@
 <body>
     <header>
         <div class="header-left">
-            <button class="menu-icon"id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
-            <div class="logo-container">
+            <button class="back-btn mobile-only"><i class="bi bi-arrow-left"></i></button>
+            
+            <button class="menu-icon desktop-only" id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+            <div class="logo-container desktop-only">
                 <div class="logo-link">
                     <img src="images/Header/YoutubeDarkLogo.png" alt="YouTube">
                     <span class="country">BR</span>
@@ -21,7 +23,7 @@
             </div>
         </div>
 
-        <div class="header-center">
+        <div class="header-center desktop-only">
             <div class="search-box">
                 <div class="input-wrapper">
                     <input type="text" placeholder="Pesquisar">
@@ -33,12 +35,16 @@
         </div>
 
         <div class="header-right">
-            <button class="create-btn"><i class="bi bi-plus-lg"></i> Criar</button>
-            <div class="notification-icon">
+            <button class="icon-btn mobile-only"><i class="bi bi-cast"></i></button>
+            <button class="icon-btn mobile-only"><i class="bi bi-search"></i></button>
+            <button class="icon-btn mobile-only"><i class="bi bi-three-dots-vertical"></i></button>
+
+            <button class="create-btn desktop-only"><i class="bi bi-plus-lg"></i> Criar</button>
+            <div class="notification-icon desktop-only">
                 <i class="bi bi-bell"></i>
                 <span class="badge">9+</span>
             </div>
-            <img src="images/Header/Profile.png" class="user-avatar" alt="Avatar">
+            <img src="images/Header/Profile.png" class="user-avatar desktop-only" alt="Avatar">
         </div>
     </header>
 
@@ -63,7 +69,7 @@
                 <span class="dot"></span>
             </a>
             <a href="#" class="sidebar-item profile-item">
-                <img src="images/Sidebar/ChannelPfp3.png" alt="Channel3">
+                <img src="images/Sidebar/ChannelPfp3.png" alt="Jazzghost">
                 <span>Jazzghost</span>
                 <span class="dot"></span>
             </a>
@@ -117,6 +123,7 @@
                     <button class="subscribe-btn" id="sub-btn" ><i class="bi bi-bell"></i> Inscrito <i class="bi bi-chevron-down"></i></button>
                     <button class="member-btn">
                         <div class="star-circle"><i class="bi bi-star-fill"></i></div> Participe
+                    </button>
                 </div>
             </div>
         </section>
@@ -126,7 +133,7 @@
             <a href="#">Vídeos</a>
             <a href="#">Playlists</a>
             <a href="#">Posts</a>
-            <i class="bi bi-search"></i>
+            <i class="bi bi-search desktop-only"></i>
         </nav>
 
         <h2 class="section-title">Para você</h2>
@@ -244,6 +251,18 @@
             </div>
         </section>
     </main>
+
+    <nav class="mobile-nav-bar mobile-only">
+        <div class="nav-item"><i class="bi bi-house-door-fill"></i><span>Início</span></div>
+        <div class="nav-item"><i class="bi bi-collection-play"></i><span>Shorts</span></div>
+        <div class="nav-item-plus"><i class="bi bi-plus-circle"></i></div>
+        <div class="nav-item"><i class="bi bi-subscriptions"></i><span>Inscrições</span></div>
+        <div class="nav-item">
+            <img src="images/Header/Profile.png" class="user-avatar-small">
+            <span>Você</span>
+        </div>
+    </nav>
+
     <script src="script.js"></script>
 </body>
 </html>
