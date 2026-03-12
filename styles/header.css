@@ -1,0 +1,153 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    height: 56px;
+    background-color: #0f0f0f;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header-left, .header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-center {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 0 1 720px;
+}
+
+.menu-icon {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.menu-icon:hover {
+    background-color: #272727;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+}
+
+.logo-container img {
+    height: 70px;
+    object-fit: contain;
+}
+
+.country {
+    font-size: 10px;
+    color: #aaa;
+    position: absolute;
+    top: 15px;   
+    right: -5px; 
+}
+
+.search-box {
+    display: flex;
+    width: 100%;
+    background-color: #121212;
+    border: 1px solid #303030;
+    border-radius: 40px;
+    overflow: hidden;
+    height: 40px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 0 15px;
+}
+
+.input-wrapper input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-btn {
+    width: 64px;
+    background-color: #222222;
+    border: none;
+    border-left: 1px solid #303030;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.mic-btn {
+    background-color: #181818;
+    border: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.icon-btn, .back-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.create-btn {
+    background-color: #272727;
+    display: flex;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    height: 35px;
+    width: 90px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.notification-icon {
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.badge {
+    background-color: #cc0000;
+    font-size: 10px;
+    padding: 1px 4px;
+    border-radius: 10px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    border: 2px solid #0f0f0f;
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
