@@ -15,6 +15,18 @@ body {
     display: none !important;
 }
 
+.separator {
+    border: none;
+    border-top: 1px solid #3e3e3e;
+    margin: 12px 0;
+}
+
+.section-divider {
+    border: none;
+    border-top: 1px solid #3e3e3e;
+    margin: 32px 0 10px 0;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -33,33 +45,11 @@ header {
     gap: 15px;
 }
 
-.icon-btn, .back-btn {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    padding: 8px;
-}
-
-.logo-container img {
-    height: 70px;
-    object-fit: contain;
-}
-
-.logo-link {
+.header-center {
     display: flex;
     align-items: center;
-    position: relative;
-    text-decoration: none;
-}
-
-.country {
-    font-size: 10px;
-    color: #aaa;
-    position: absolute;
-    top: 15px;   
-    right: -5px; 
+    gap: 15px;
+    flex: 0 1 720px;
 }
 
 .menu-icon {
@@ -76,11 +66,24 @@ header {
     background-color: #272727;
 }
 
-.header-center {
+.logo-link {
     display: flex;
     align-items: center;
-    gap: 15px;
-    flex: 0 1 720px;
+    position: relative;
+    text-decoration: none;
+}
+
+.logo-container img {
+    height: 70px;
+    object-fit: contain;
+}
+
+.country {
+    font-size: 10px;
+    color: #aaa;
+    position: absolute;
+    top: 15px;   
+    right: -5px; 
 }
 
 .search-box {
@@ -128,6 +131,15 @@ header {
     border-radius: 50%;
     font-size: 18px;
     cursor: pointer;
+}
+
+.icon-btn, .back-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 8px;
 }
 
 .create-btn {
@@ -206,12 +218,6 @@ header {
     color: #f1f1f1;
 }
 
-.separator {
-    border: none;
-    border-top: 1px solid #3e3e3e;
-    margin: 12px 0;
-}
-
 .profile-item img {
     width: 24px;
     height: 24px;
@@ -267,8 +273,6 @@ body.sidebar-active .channel-layout {
 
 .channel-details {
     grid-area: channel-details
-
-
 }
 
 .channel-details h1 {
@@ -330,12 +334,11 @@ body.sidebar-active .channel-layout {
     color: #ffffff;
     display: flex;
     align-items: center;
-    height: 40px;
     gap: 10px;
     padding: 0 16px;
     border-radius: 20px;
     font-weight: bold;
-    height: 36px;
+    height: 40px;
     cursor: pointer;
 }
 
@@ -402,12 +405,6 @@ body.sidebar-active .channel-layout {
     object-fit: cover;
 }
 
-.title-options {
-    display: flex;
-    flex-direction: row;
-    margin-top: 10px;
-}
-
 .video-duration {
     position: absolute;
     bottom: 8px;
@@ -417,6 +414,12 @@ body.sidebar-active .channel-layout {
     padding: 2px 4px;
     border-radius: 4px;
     font-size: 12px;
+}
+
+.title-options {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
 }
 
 .video-title {
@@ -431,13 +434,6 @@ body.sidebar-active .channel-layout {
     margin-top: 4px;
 }
 
-.section-divider {
-    border: none;
-    border-top: 1px solid #3e3e3e;
-    margin: 32px 0 10px 0;
-}
-
-/* Overlay - Fundo escuro */
 .menu-overlay {
     position: fixed;
     top: 0;
@@ -446,29 +442,26 @@ body.sidebar-active .channel-layout {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 99;
-    display: none; /* Escondido por padrão */
+    display: none;
 }
 
-/* O Menu Bottom Sheet */
 .options-menu {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #282828; /* Cor cinza escuro do YouTube */
+    background-color: #282828; 
     border-radius: 12px 12px 0 0;
     z-index: 100;
-    transform: translateY(100%); /* Começa fora da tela */
-    transition: transform 0.3s ease-out;
+    transform: translateY(100%);
+    transition: transform 0.24s ease-out;
     padding-bottom: 20px;
 }
 
-/* Quando o menu estiver ativo */
 .options-menu.active {
     transform: translateY(0);
 }
 
-/* A barrinha cinza de arrastar */
 .drag-handle {
     width: 40px;
     height: 4px;
@@ -477,7 +470,6 @@ body.sidebar-active .channel-layout {
     margin: 12px auto;
 }
 
-/* Itens do Menu */
 .options-menu-item {
     display: flex;
     align-items: center;
@@ -493,7 +485,7 @@ body.sidebar-active .channel-layout {
 }
 
 .options-menu-item:active {
-    background-color: #3e3e3e; /* Efeito de clique */
+    background-color: #3e3e3e;
 }
 
 @media (max-width: 768px) {
@@ -660,5 +652,4 @@ body.sidebar-active .channel-layout {
         height: 24px;
         border-radius: 50%;
     }
-
 }
