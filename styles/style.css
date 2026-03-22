@@ -19,5 +19,5 @@ body {
 }
 
 .mobile-only {
-    display: none !important;
+    display: none ;
 }
